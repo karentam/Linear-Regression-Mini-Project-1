@@ -198,7 +198,7 @@ summary(energy.mod2) # show regression coefficients table
 # No independent variables are significant to the model. 
 # The model has an adjusted R-squared of 0.1026, 
 # meaning that the data are not close to the fitted regression line. 
-# This adjusted R-squared is a little better than the model with expenses and metro.
+# This adjusted R-squared is a little better than the adjusted R-squared of the model with expenses and metro.
 
 # Examine the model object:
 
@@ -218,8 +218,8 @@ hist(residuals(energy.mod2))
 par(mar = c(4, 4, 2, 2), mfrow = c(1, 2)) #optional
 plot(energy.mod2, which = c(1, 2)) # "which" argument optional
 
-## The model with only metro as a predictor has smaller adjusted R-squared (0.097), 
-## but the variable is significant to the model (p-value: 0.0158). 
+## The model with only metro as a predictor has a smaller adjusted R-squared (0.097), 
+## but metro is significant to the model (p-value: 0.0158). 
 
 ## On the other hand, the model with metro, income, and density as predictors 
 ## have a slightly larger adjusted R-Squared (0.1026),
@@ -312,7 +312,7 @@ coef(summary(energy.region)) # show regression coefficients table
 anova(energy.region) # show ANOVA table
 
 ## RegionSouth and RegionMidwest are not statistically significant. 
-## On the other hand, at p = 0.1, RegionN.East is statistically siginificant
+## On the other hand, at p = 0.1, RegionN.East is statistically significant
 ## with the p value of 0.01411.
 
 

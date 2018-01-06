@@ -123,7 +123,6 @@ sat.mod <- update(sat.mod, data=na.omit(states.data))
 anova(sat.mod, sat.voting.mod)
 coef(summary(sat.voting.mod))
 
-<b>
 
 ## Exercise: least squares regression
 ## ────────────────────────────────────────
@@ -230,7 +229,6 @@ plot(energy.mod2, which = c(1, 2)) # "which" argument optional
 ## It is smaller than 35.95% percentage error 
 ## for the model with metro, income, and density. 
 
-</b>
   
 ## Interactions and factors
 ## ══════════════════════════

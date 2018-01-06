@@ -1,3 +1,6 @@
+## Exercises completed by HK Tam
+## January 5, 2018
+
 #  Introduction
 ## ══════════════
 
